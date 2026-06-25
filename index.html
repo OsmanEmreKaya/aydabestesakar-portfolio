@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayda Beste Şakar — İç Mimar</title>
+  <meta name="description" content="Ayda Beste Şakar — Atmosfer, malzeme ve insan deneyimi etrafında şekillenen iç mimari. Kavramsal, parametrik ve malzeme duyarlı iç mekân tasarımı." />
+  <link rel="icon" href="assets/icons/Simple Corporate Business Card.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#home" class="brand" aria-label="Ayda Beste Şakar — Anasayfa">
+        <img class="brand-monogram" src="assets/icons/Simple Corporate Business Card.png" alt="AŞ" />
+        <span class="brand-name">Ayda Beste Şakar</span>
+      </a>
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a href="#home" class="nav-link" data-i18n="nav.home">Anasayfa</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projeler</a>
+        <a href="#studio" class="nav-link" data-i18n="nav.studio">Stüdyo</a>
+        <a href="#experience" class="nav-link" data-i18n="nav.experience">Deneyim</a>
+        <a href="#journal" class="nav-link" data-i18n="nav.journal">Günlük</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">Hakkımda</a>
+        <a href="#contact" class="nav-link nav-link--cta" data-i18n="nav.contact">İletişim</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle is-tr" id="langToggle" aria-label="Dil değiştir">
+          <span class="lang-tr">TR</span><span class="lang-sep">/</span><span class="lang-en">EN</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="primaryNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <svg class="hero-lines" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M0 220 H1440 M0 460 H1440 M0 700 H1440" opacity="0.5"/>
+          <path d="M360 0 V900 M720 0 V900 M1080 0 V900" opacity="0.5"/>
+          <rect x="360" y="220" width="360" height="240" opacity="0.8"/>
+          <path d="M360 340 H520 M520 340 V460" opacity="0.8"/>
+          <circle cx="1080" cy="460" r="120" opacity="0.7"/>
+          <path d="M960 460 H1200 M1080 340 V580" opacity="0.6"/>
+        </g>
+      </svg>
+      <div class="hero-inner">
+        <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">İç Mimar &amp; Mekân Tasarımcısı</p>
+        <h1 class="hero-title">
+          <span class="reveal">Ayda Beste</span>
+          <span class="reveal hero-title--accent">Şakar</span>
+        </h1>
+        <p class="hero-statement reveal" data-i18n="hero.statement">
+          Atmosfer, malzeme ve insan deneyimi etrafında şekillenen iç mimari —
+          karşıtlık, hafıza ve insanların mekânda nasıl hareket ettiğinin sessiz mantığından doğan mekânlar.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn--solid" data-i18n="hero.cta1">Projeleri Gör</a>
+          <a href="#contact" class="btn btn--ghost" data-i18n="hero.cta2">Proje Başlat</a>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <span>Ankara · Mersin</span>
+        <span data-i18n="hero.meta.uni">Çankaya Üniversitesi</span>
+        <span class="hero-scroll" data-i18n="hero.scroll">Kaydır <i></i></span>
+      </div>
+    </section>
+
+    <!-- SPLIT -->
+    <section class="split" id="identity">
+      <a href="#studio" class="split-panel split-panel--studio reveal">
+        <div class="split-media"></div>
+        <div class="split-content">
+          <span class="split-index">01</span>
+          <h2 class="split-title" data-i18n="split.studio.title">Stüdyoda</h2>
+          <p class="split-text" data-i18n="split.studio.text">Konsept, eskiz, malzeme ve bir fikrin yavaşça inşası — mekândan önceki düşünce.</p>
+          <span class="split-cta" data-i18n="split.studio.cta">Sürece gir →</span>
+        </div>
+      </a>
+      <a href="#projects" class="split-panel split-panel--space reveal">
+        <div class="split-media"></div>
+        <div class="split-content">
+          <span class="split-index">02</span>
+          <h2 class="split-title" data-i18n="split.space.title">Mekânda</h2>
+          <p class="split-text" data-i18n="split.space.text">Tamamlanan projeler, iç mekânlar ve görselleştirmeler — konseptin atmosfere dönüştüğü yer.</p>
+          <span class="split-cta" data-i18n="split.space.cta">İşlere bak →</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--dark projects" id="projects">
+      <div class="section-head">
+        <p class="section-eyebrow reveal" data-i18n="projects.eyebrow">Seçili İşler</p>
+        <h2 class="section-title reveal" data-i18n="projects.title">Projeler</h2>
+        <p class="section-lead reveal" data-i18n="projects.lead">
+          Akademik ve kavramsal iç mimari projelerden bir seçki — her biri net bir mekânsal anlatı,
+          teknik detay ve ışığa-malzemeye duyarlılıkla yönlendiriliyor.
+        </p>
+      </div>
+      <div class="project-list">
+
+        <article class="project reveal">
+          <div class="project-media" data-parallax>
+            <div class="project-img" data-img="residence"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span data-i18n="proj1.cat">Konut · Konsept</span>
+              <span>2026</span>
+            </div>
+            <h3 class="project-name" data-i18n="proj1.name">Kamusal Bir Kişi İçin Konut</h3>
+            <p class="project-desc" data-i18n="proj1.desc">
+              Bitirme projesi: sanatçı Canan Tolon için tasarlanan özel bir konut; mahremiyet ve görünürlük,
+              sessizlik ve ifade, durağanlık ve hareket mekânsal kararlara dönüşüyor. Merkezdeki kesişim alanı
+              bir duraklama noktası olarak kurgulanıyor; mekânlar dışa doğru ilerledikçe daha açık ve ifade
+              gücü yüksek bir karaktere bürünüyor.
+            </p>
+            <div class="project-tags">
+              <span>Rhino</span><span>AutoCAD</span><span>Twinmotion</span>
+            </div>
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/1f7yZ2QHRGzerScJqAyYMf-08kAUHGCbM/view?usp=sharing" target="_blank" rel="noopener" data-i18n="link.boards">Sunum Paftaları ↗</a>
+              <a href="https://drive.google.com/file/d/1jUHiIq9TX9YWB9Dwv488frHcki3gaajj/view?usp=sharing" target="_blank" rel="noopener" data-i18n="link.sheets">Çizimler ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project--reverse reveal">
+          <div class="project-media" data-parallax>
+            <div class="project-img" data-img="health"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span data-i18n="proj2.cat">İyi Oluş · Konaklama · Grup</span>
+              <span>~8,000 m²</span>
+            </div>
+            <h3 class="project-name" data-i18n="proj2.name">Vitalis Sağlık İyileştirme Merkezi</h3>
+            <p class="project-desc" data-i18n="proj2.desc">
+              Sağlık hizmetleri ile konaklamayı birleştiren bütüncül bir merkez — karşılama, klinik,
+              konaklama, sosyal ve yemek alanları; fiziksel, zihinsel ve ruhsal iyi oluşun toplulukla
+              güçlendiği fikri etrafında tasarlandı.
+            </p>
+            <div class="project-tags">
+              <span>AutoCAD</span><span>Rhino</span><span>Twinmotion</span>
+            </div>
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/1kiVj5I2TUSgFkpHKUuDb2IxYzLUreUCA/view?usp=sharing" target="_blank" rel="noopener" data-i18n="link.view">Projeyi gör ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-media" data-parallax>
+            <div class="project-img" data-img="restaurant"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span data-i18n="proj3.cat">Konaklama · Konsept</span>
+              <span>Ankara</span>
+            </div>
+            <h3 class="project-name" data-i18n="proj3.name">Ankara'da Tematik Bir Restoran</h3>
+            <p class="project-desc" data-i18n="proj3.desc">
+              Yerel ve küresel kültürel referansların özgün bir atmosfer kurduğu 250–300 kişilik bir restoran.
+              Parametrik araçlar görsel öğeleri, ses ortamını ve gastronomiyi bir mekânsal anlatıda buluşturuyor;
+              yerel malzemeler ve zanaat kültürel bağı güçlendiriyor.
+            </p>
+            <div class="project-tags">
+              <span>Rhino</span><span>AutoCAD</span><span>Twinmotion</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.canva.com/design/DAGaWzFRovY/7MH6QNPtF_ANE_igvpGcHA/view" target="_blank" rel="noopener" data-i18n="link.present">Sunumu gör ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project--reverse reveal">
+          <div class="project-media" data-parallax>
+            <div class="project-img" data-img="mediatheque"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span data-i18n="proj4.cat">Kültürel · Parametrik</span>
+              <span>Çankaya Üniversitesi</span>
+            </div>
+            <h3 class="project-name" data-i18n="proj4.name">Médiathèque — Parametrik Rizomlar</h3>
+            <p class="project-desc" data-i18n="proj4.desc">
+              Bir kampüs kafesinin multimedya kütüphanesine dönüştürülmesi. Kullanıcı davranışı, sirkülasyon
+              ve çevresel analizden yola çıkan parametrik bir "adaptif kabuk" mekânı biçimlendiriyor — esnek
+              çalışma alanları, dijital medya bölgeleri ve topluluk odaklı etkileşimi dengeleyen bir çözüm.
+            </p>
+            <div class="project-tags">
+              <span>Rhino</span><span>Grasshopper</span><span>AutoCAD</span><span>Twinmotion</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.canva.com/design/DAGj3Du-xaI/ZTzqIc2LNgFmYhIr3egdfw/view" target="_blank" rel="noopener" data-i18n="link.present">Sunumu gör ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ARCHIVE -->
+    <section class="section archive" id="archive">
+      <div class="section-head">
+        <p class="section-eyebrow reveal" data-i18n="archive.eyebrow">Arşiv</p>
+        <h2 class="section-title reveal" data-i18n="archive.title">Öne Çıkan İşler</h2>
+      </div>
+      <ul class="archive-list">
+        <li class="archive-row reveal">
+          <span class="archive-name" data-i18n="arch1.name">Sökülebilir Tabure — Üçlü Set</span>
+          <span class="archive-type" data-i18n="arch1.type">Ürün / Detay</span>
+          <span class="archive-palette" data-i18n="arch1.palette">Koyu &amp; açık meşe · siyah çelik · kumaş</span>
+          <span class="archive-year">2024</span>
+          <p class="archive-note" data-i18n="arch1.note">Dolu–boş, kütle ve ışık–gölge üzerinden incelenen sökülebilir bir tabure; ağır ahşap, hafif ve çizgisel çelik bir iskelete karşı kurgulandı.</p>
+          <div class="archive-links">
+            <a href="https://drive.google.com/file/d/1X8JaQEmLExeLq10rbCIjCJgKjfsmIEAT/view?usp=sharing" target="_blank" rel="noopener">Pafta 1 ↗</a>
+            <a href="https://drive.google.com/file/d/16Ze_IihnGQeop_ergsdaHwSPPh7CcGR2/view?usp=sharing" target="_blank" rel="noopener">Pafta 2 ↗</a>
+          </div>
+        </li>
+        <li class="archive-row reveal">
+          <span class="archive-name" data-i18n="arch2.name">BIM Mutfak — ArchiCAD</span>
+          <span class="archive-type" data-i18n="arch2.type">Konut / BIM</span>
+          <span class="archive-palette" data-i18n="arch2.palette">İşlevsel · ergonomik · NKBA</span>
+          <span class="archive-year">2024</span>
+          <p class="archive-note" data-i18n="arch2.note">3+1 bir dairenin mutfağının ArchiCAD'de ergonomi ve NKBA planlama ilkeleri etrafında yeniden tasarlanması.</p>
+        </li>
+        <li class="archive-row reveal">
+          <span class="archive-name" data-i18n="arch3.name">Çelik Asma Kat &amp; Kuru Duvar Sistemleri</span>
+          <span class="archive-type" data-i18n="arch3.type">Strüktür / İç Mekân · Grup</span>
+          <span class="archive-palette" data-i18n="arch3.palette">Çelik · beton · alçıpan</span>
+          <span class="archive-year">2024</span>
+          <p class="archive-note" data-i18n="arch3.note">Kuru duvar dolgulu çelik konstrüksiyonlu bir asma kat; çelik ve betonarme merdiven alternatifleri 1/20 ölçekte detaylandırıldı.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section--dark experience" id="experience">
+      <div class="section-head">
+        <p class="section-eyebrow reveal" data-i18n="exp.eyebrow">Arka Plan</p>
+        <h2 class="section-title reveal" data-i18n="exp.title">Deneyim</h2>
+        <p class="section-lead reveal" data-i18n="exp.lead">Eğitim, stajlar ve sertifikalar — konsept stüdyolarından aktif şantiyelere.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-date">2021 — 2026</span>
+          <div class="timeline-content">
+            <h3 data-i18n="exp1.title">İç Mimarlık Lisans</h3>
+            <p class="timeline-org">Çankaya Üniversitesi · Ankara, Türkiye</p>
+            <p data-i18n="exp1.desc">İç mekân tasarımı, mekânsal organizasyon, malzeme bilgisi ve görselleştirme — disiplinin hem teknik hem kavramsal yönünde bir temel.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-date" data-i18n="exp2.date">Ağu — Eyl 2025</span>
+          <div class="timeline-content">
+            <h3 data-i18n="exp2.title">Stajyer · Şantiye</h3>
+            <p class="timeline-org">Fon Mimarlık &amp; İç Mimarlık &amp; Mühendislik · Mersin</p>
+            <p data-i18n="exp2.desc">İç mimari uygulamanın sahada gözlemi: alçıpan, asma tavan, yüzey kaplamaları, su yalıtımı, doğrama, elektrik ve sabit mobilya montajı.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-date" data-i18n="exp3.date">Haz — Ağu 2025</span>
+          <div class="timeline-content">
+            <h3 data-i18n="exp3.title">Stajyer · Ofis</h3>
+            <p class="timeline-org">Irmak Özdiker İç Mimarlık · Mersin</p>
+            <p data-i18n="exp3.desc">İç ve dış mekân tasarım süreçleri, konsept geliştirme ve mekânsal planlama; malzeme, renk ve aydınlatma seçimi; AutoCAD, Rhino ve Twinmotion.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-date" data-i18n="exp4.date">Tem — Ağu 2024</span>
+          <div class="timeline-content">
+            <h3 data-i18n="exp4.title">Stajyer · Şantiye</h3>
+            <p class="timeline-org">Kasapoğlu İnşaat &amp; Mimarlık · Anamur, Mersin</p>
+            <p data-i18n="exp4.desc">İç mekân yerleşim planlaması, malzeme araştırması, tedarikçi koordinasyonu, çizim revizyonları ve giriş tavan planı tasarımı.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-date" data-i18n="exp5.date">Sertifika</span>
+          <div class="timeline-content">
+            <h3 data-i18n="exp5.title">KDSA — Kuru Duvar Sistemleri Tasarım &amp; Denetim</h3>
+            <p class="timeline-org" data-i18n="exp5.org">ODTÜ Sürekli Eğitim Merkezi iş birliğiyle</p>
+            <p data-i18n="exp5.desc">Kuru duvar sistemleri tasarımı ve denetimi üzerine internet tabanlı sertifika programı.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="section philosophy" id="philosophy">
+      <div class="philosophy-grid">
+        <h2 class="philosophy-statement reveal" data-i18n="phil.statement">
+          Bir mekân, anlaşılmadan önce hissedilmelidir.
+        </h2>
+        <div class="philosophy-cols">
+          <p class="reveal" data-i18n="phil.1"><strong>Işık &amp; oran.</strong> Gün ışığı, ölçek ve ritim önce gelir — bir odanın nasıl okunacağına, içine herhangi bir nesne girmeden çok önce karar verirler.</p>
+          <p class="reveal" data-i18n="phil.2"><strong>Malzeme duyarlılığı.</strong> Dürüst malzemeler, gerilim içinde tutulur — ağır karşı hafif, koyu karşı açık — her mekâna net bir karakter vermek için.</p>
+          <p class="reveal" data-i18n="phil.3"><strong>İnsan akışı.</strong> Tasarım hareketi ve ihtiyacı izler; sükûnet, işlev ve atmosfer birlikte planlanır, asla biri diğerine feda edilmez.</p>
+          <p class="reveal" data-i18n="phil.4"><strong>Anlatı.</strong> Her proje bir hikâyeden başlar — hafıza, karşıtlık, dönüşüm — ve bu hikâye mekânsal kararları bir arada tutar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section--dark process" id="studio">
+      <div class="section-head">
+        <p class="section-eyebrow reveal" data-i18n="proc.eyebrow">Nasıl Çalışıyorum</p>
+        <h2 class="section-title reveal" data-i18n="proc.title">Stüdyo Süreci</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <span class="process-num">01</span>
+          <h3 data-i18n="proc1.title">Keşif</h3>
+          <p data-i18n="proc1.desc">Kullanıcıyı, brifi ve mekânı anlamak — ihtiyaçlar, kısıtlar, yaşam tarzı ve mekânın anlatması gereken hikâye.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">02</span>
+          <h3 data-i18n="proc2.title">Konsept</h3>
+          <p data-i18n="proc2.desc">Bu hikâyeyi mekânsal fikirlere çevirmek — karşıtlıklar, sirkülasyon ve atmosfer — eskiz ve parametrik biçim arayışıyla araştırılır.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">03</span>
+          <h3 data-i18n="proc3.title">Malzeme &amp; Mekânsal Tasarım</h3>
+          <p data-i18n="proc3.desc">Yerleşim, ışık, malzeme ve detayın çözümü — AutoCAD, Rhino ve ArchiCAD'de, teknik çizimler ve 3B modellerle geliştirilir.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">04</span>
+          <h3 data-i18n="proc4.title">Son Stilizasyon</h3>
+          <p data-i18n="proc4.desc">Hayata geçirme — aydınlatma, yüzeyler ve Twinmotion görselleştirmesi, tutarlı ve atmosferik bir bütün olarak sunulur.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="section-head">
+        <p class="section-eyebrow reveal" data-i18n="skills.eyebrow">Yetkinlikler</p>
+        <h2 class="section-title reveal" data-i18n="skills.title">Beceriler &amp; Araçlar</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-block reveal">
+          <h3 class="skills-heading" data-i18n="skills.software">Yazılım</h3>
+          <ul class="skills-tools">
+            <li><span>AutoCAD 2D</span><em data-i18n="lvl.advanced">İleri Düzey</em></li>
+            <li><span>Twinmotion</span><em data-i18n="lvl.advanced">İleri Düzey</em></li>
+            <li><span>Rhinoceros</span><em data-i18n="lvl.intermediate">Orta Düzey</em></li>
+            <li><span>Grasshopper</span><em data-i18n="lvl.parametric">Parametrik</em></li>
+            <li><span>ArchiCAD</span><em>BIM</em></li>
+            <li><span>Autodesk 3ds Max</span><em data-i18n="lvl.modelling">Modelleme</em></li>
+            <li><span>Adobe Photoshop</span><em data-i18n="lvl.present">Sunum</em></li>
+          </ul>
+        </div>
+        <div class="skills-block reveal">
+          <h3 class="skills-heading" data-i18n="skills.design">Tasarım</h3>
+          <ul class="skills-list">
+            <li data-i18n="skill.d1">Tasarım odaklı düşünme</li>
+            <li data-i18n="skill.d2">Teknik çizim &amp; planlama</li>
+            <li data-i18n="skill.d3">3B modelleme &amp; görselleştirme</li>
+            <li data-i18n="skill.d4">Parametrik tasarım</li>
+            <li data-i18n="skill.d5">Malzeme bilgisi &amp; detaylandırma</li>
+            <li data-i18n="skill.d6">Mekân planlama</li>
+            <li data-i18n="skill.d7">Sunum &amp; görsel ifade</li>
+            <li data-i18n="skill.d8">Ekip çalışması &amp; iletişim</li>
+          </ul>
+        </div>
+        <div class="skills-block reveal">
+          <h3 class="skills-heading" data-i18n="skills.language">Dil</h3>
+          <ul class="skills-list">
+            <li data-i18n="lang.tr">Türkçe — Anadil</li>
+            <li data-i18n="lang.en">İngilizce — C1</li>
+          </ul>
+          <h3 class="skills-heading skills-heading--mt" data-i18n="skills.prestools">Sunum araçları</h3>
+          <ul class="skills-list">
+            <li>Photoshop · Canva · Prezi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="section section--dark journal" id="journal">
+      <div class="section-head">
+        <p class="section-eyebrow reveal" data-i18n="journal.eyebrow">Günlük</p>
+        <h2 class="section-title reveal" data-i18n="journal.title">Mekân Üzerine Notlar</h2>
+      </div>
+      <div class="journal-grid">
+        <article class="journal-card reveal">
+          <span class="journal-cat" data-i18n="jr1.cat">Işık · Yazı</span>
+          <h3 data-i18n="jr1.title">Işık Bir Odayı Neden Tanımlar</h3>
+          <p data-i18n="jr1.desc">Mobilya ya da yüzeyden önce, gün ışığı bir mekânın ruh halini belirler — ve gün boyunca nasıl değiştiğini.</p>
+          <span class="journal-date" data-i18n="soon">Yakında</span>
+        </article>
+        <article class="journal-card reveal">
+          <span class="journal-cat" data-i18n="jr2.cat">Malzeme</span>
+          <h3 data-i18n="jr2.title">Bir Malzeme Stratejisi Olarak Karşıtlık</h3>
+          <p data-i18n="jr2.desc">Tabure projesinden notlar: ağır ahşap ve hafif çelik tek bir nesneyi nasıl bir arada tutabilir.</p>
+          <span class="journal-date" data-i18n="soon">Yakında</span>
+        </article>
+        <article class="journal-card reveal">
+          <span class="journal-cat" data-i18n="jr3.cat">Süreç</span>
+          <h3 data-i18n="jr3.title">Konutta Sessizliği Tasarlamak</h3>
+          <p data-i18n="jr3.desc">Mahremiyet, duraklama ve sessiz odanın değeri üzerine — Tolon konutundan dersler.</p>
+          <span class="journal-date" data-i18n="soon">Yakında</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <div class="about-portrait reveal">
+          <!-- REPLACE: assets/images/portrait.jpeg -->
+          <div class="about-img" data-img="portrait"></div>
+        </div>
+        <div class="about-content">
+          <p class="section-eyebrow reveal" data-i18n="about.eyebrow">Hakkımda</p>
+          <h2 class="section-title reveal">Ayda Beste Şakar</h2>
+          <p class="about-lead reveal" data-i18n="about.lead">
+            İç mimar ve Ankara'daki Çankaya Üniversitesi'nin 2026 mezunu; teknik ile yaratıcının buluştuğu noktada çalışıyor.
+          </p>
+          <p class="reveal" data-i18n="about.p1">
+            Çalışmalarım; işlevsel, estetik ve sürdürülebilir mekânlar üzerine kurulu. Tasarım ofislerinde ve şantiyelerde geçen üç staj sürecinde kavramsal konutlardan parametrik bir médiathèque'e, bütüncül bir sağlık merkezine kadar farklı ölçek ve türlerde projeler deneyimledim. Her çalışmada malzemeye, detaya ve insanların mekânla kuracağı ilişkiye aynı dikkatle yaklaştım.
+          </p>
+          <p class="reveal" data-i18n="about.p2">
+            Detaylara önem veren ve sürekli öğrenen biri olarak ekip içinde rahatım ve planlı, özenli çalışmayı önemsiyorum — sakin, niyetli ve sessizce kişisel hissettiren mekânlar tasarlıyorum.
+          </p>
+          <div class="about-links reveal">
+            <a href="mailto:aydabestesakar@hotmail.com">E-posta</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Behance">Behance</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--dark contact" id="contact">
+      <div class="contact-grid">
+        <div class="contact-intro">
+          <p class="section-eyebrow reveal" data-i18n="contact.eyebrow">Konuşalım</p>
+          <h2 class="section-title reveal" data-i18n="contact.title">Proje Başlat</h2>
+          <p class="section-lead reveal" data-i18n="contact.lead">
+            Konut ve ticari iç mimari, konsept geliştirme ve görselleştirme için uygunum. Mekânınızdan bahsedin.
+          </p>
+          <ul class="contact-details reveal">
+            <li><span data-i18n="contact.email">E-posta</span><a href="mailto:aydabestesakar@hotmail.com">aydabestesakar@hotmail.com</a></li>
+            <li><span data-i18n="contact.phone">Telefon</span><a href="tel:+905072384854">+90 507 238 4854</a></li>
+            <li><span data-i18n="contact.based">Konum</span><span data-i18n="contact.location">Ankara &amp; Mersin, Türkiye</span></li>
+          </ul>
+        </div>
+        <form class="contact-form reveal" id="inquiryForm" novalidate>
+          <div class="field">
+            <label for="name" data-i18n="form.name">Ad</label>
+            <input type="text" id="name" name="name" placeholder="Adınız" data-i18n-ph="form.name.ph" required />
+          </div>
+          <div class="field">
+            <label for="email" data-i18n="form.email">E-posta</label>
+            <input type="email" id="email" name="email" placeholder="siz@eposta.com" required />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="type" data-i18n="form.type">Proje türü</label>
+              <select id="type" name="type">
+                <option data-i18n="opt.residential">Konut</option>
+                <option data-i18n="opt.commercial">Ticari</option>
+                <option data-i18n="opt.hospitality">Konaklama</option>
+                <option data-i18n="opt.concept">Konsept / Yarışma</option>
+                <option data-i18n="opt.other">Diğer</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="location" data-i18n="form.location">Konum</label>
+              <input type="text" id="location" name="location" placeholder="Şehir" data-i18n-ph="form.location.ph" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="budget" data-i18n="form.budget">Bütçe aralığı</label>
+            <select id="budget" name="budget">
+              <option data-i18n="opt.tbd">Görüşülecek</option>
+              <option>€10k altı</option>
+              <option>€10k – €30k</option>
+              <option>€30k – €75k</option>
+              <option>€75k+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message" data-i18n="form.message">Mesaj</label>
+            <textarea id="message" name="message" rows="4" placeholder="Mekânınızdan, takviminizden ve hedeflerinizden bahsedin..." data-i18n-ph="form.message.ph"></textarea>
+          </div>
+          <button type="submit" class="btn btn--solid btn--block" data-i18n="form.submit">Talebi Gönder</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img class="footer-monogram" src="assets/icons/Simple Corporate Business Card.png" alt="AŞ" />
+      <p class="footer-name" data-i18n="footer.name">Ayda Beste Şakar — İç Mimar</p>
+      <p class="footer-copy">© <span id="year"></span> · <span data-i18n="footer.copy">Kişisel portfolyo olarak hazırlandı · Ankara, Türkiye</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

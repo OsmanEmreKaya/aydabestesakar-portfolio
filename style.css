@@ -601,11 +601,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
     flex-direction: column; justify-content: center;
     background: var(--charcoal); color: var(--ivory);
     gap: 2rem; transform: translateX(100%); transition: transform var(--t-med);
+    mix-blend-mode: normal;
+    z-index: 99;
   }
   .nav.open { transform: none; }
   .nav-link { font-size: 1.4rem; letter-spacing: 0.12em; }
   .nav-link--cta { border: none; }
   body.menu-open { overflow: hidden; }
+  .header-actions { z-index: 101; position: relative; }
   .menu-toggle.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
   .menu-toggle.active span:nth-child(2) { opacity: 0; }
   .menu-toggle.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }

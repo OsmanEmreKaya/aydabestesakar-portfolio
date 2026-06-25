@@ -102,13 +102,12 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   inset: 0 0 auto 0;
   z-index: 100;
   padding: clamp(1rem, 2.5vw, 1.75rem) 0;
-  transition: background var(--t-fast), padding var(--t-fast), box-shadow var(--t-fast);
-  mix-blend-mode: difference;
+  background: transparent;
   color: #fff;
+  transition: background var(--t-fast), padding var(--t-fast), box-shadow var(--t-fast);
 }
 .site-header.scrolled {
-  mix-blend-mode: normal;
-  background: rgba(244, 240, 233, 0.88);
+  background: rgba(244, 240, 233, 0.92);
   backdrop-filter: blur(12px);
   color: var(--text);
   box-shadow: 0 1px 0 var(--line);
@@ -598,17 +597,18 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   .menu-toggle { display: flex; }
   .nav {
     position: fixed; inset: 0;
-    flex-direction: column; justify-content: center;
+    flex-direction: column; justify-content: center; align-items: center;
     background: var(--charcoal); color: var(--ivory);
     gap: 2rem; transform: translateX(100%); transition: transform var(--t-med);
-    mix-blend-mode: normal;
-    z-index: 99;
+    z-index: 200;
+    padding: 5rem 2rem 3rem;
   }
   .nav.open { transform: none; }
-  .nav-link { font-size: 1.4rem; letter-spacing: 0.12em; }
+  .nav-link { font-size: 1.4rem; letter-spacing: 0.12em; color: var(--ivory); }
+  .nav-link::after { background: var(--ivory); }
   .nav-link--cta { border: none; }
   body.menu-open { overflow: hidden; }
-  .header-actions { z-index: 101; position: relative; }
+  .header-actions { z-index: 201; position: relative; }
   .menu-toggle.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
   .menu-toggle.active span:nth-child(2) { opacity: 0; }
   .menu-toggle.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }

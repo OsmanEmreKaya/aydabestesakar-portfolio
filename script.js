@@ -20,11 +20,16 @@
   /* ---- Mobile menu ---- */
   var toggle = document.getElementById("menuToggle");
   var nav = document.getElementById("primaryNav");
+  var headerInner = document.querySelector(".header-inner");
+  var headerActions = document.querySelector(".header-actions");
   function closeMenu() {
     nav.classList.remove("open");
     toggle.classList.remove("active");
     toggle.setAttribute("aria-expanded", "false");
     document.body.classList.remove("menu-open");
+    if (nav.parentNode === document.body) {
+      headerInner.insertBefore(nav, headerActions);
+    }
   }
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
@@ -32,6 +37,11 @@
       toggle.classList.toggle("active", open);
       toggle.setAttribute("aria-expanded", String(open));
       document.body.classList.toggle("menu-open", open);
+      if (open) {
+        document.body.appendChild(nav);
+      } else {
+        closeMenu();
+      }
     });
     nav.querySelectorAll("a").forEach(function (link) { link.addEventListener("click", closeMenu); });
   }

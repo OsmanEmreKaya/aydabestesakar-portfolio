@@ -608,7 +608,14 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   .nav-link::after { background: var(--ivory); }
   .nav-link--cta { border: none; }
   body.menu-open { overflow: hidden; }
-  .header-actions { z-index: 201; position: relative; }
+  body.menu-open .site-header {
+    z-index: 300;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  body.menu-open .brand-monogram { filter: brightness(0) invert(1) !important; }
+  body.menu-open .menu-toggle span { background: var(--ivory); }
+  body.menu-open .lang-toggle { color: var(--ivory); }
   .menu-toggle.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
   .menu-toggle.active span:nth-child(2) { opacity: 0; }
   .menu-toggle.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }

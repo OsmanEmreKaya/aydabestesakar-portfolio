@@ -391,7 +391,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 .project-links a:hover::after { transform: scaleX(1); transform-origin: left; }
 
 .project-img[data-img="residence"]   { background-image: url("assets/images/project-residence.png"); background-color: #4a4034; }
-.project-img[data-img="health"]      { background-image: url("assets/images/project-health.jpg"); background-color: #38423d; }
+.project-img[data-img="health"]      { background-image: url("assets/images/vitalis.png"); background-color: #38423d; }
 .project-img[data-img="restaurant"]  { background-image: url("assets/images/TematikBirRestoran.png"); background-color: #4d3a30; }
 .project-img[data-img="mediatheque"] { background-image: url("assets/images/Médiathèque.png"); background-color: #2f3340; }
 
